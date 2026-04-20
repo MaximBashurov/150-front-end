@@ -59,6 +59,26 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <meta name="twitter:title" content="150">
 <meta name="twitter:description" content="#HSPPTBT">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3NMFP1SVSR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3NMFP1SVSR');
+</script>
+
+<!-- Tracking navigation inside TiddlyWiki -->
+<script>
+document.addEventListener("click", function() {
+  gtag('event', 'page_view', {
+    page_title: document.title,
+    page_location: window.location.href
+  });
+});
+</script>
+
 </head>
 <body class="tc-body">
 <!--~~ Raw markup for the top of the body section ~~-->
